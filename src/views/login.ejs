@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Login</title>
+</head>
+<body>
+  <h1>Login</h1>
+  <div id="login-form">
+    <form @submit.prevent="handleSubmit">
+      <input type="text" placeholder="Username" v-model="form.username">
+      <input type="password" placeholder="Password" v-model="form.password">
+      <button type="submit">Login</button>
+    </form>
+  </div>
+  <%- include('./layouts/import-vue'); -%>
+  <%# <script src="/assets/js/login.js"></script> #%>
+  <script src="/assets/js/login.js"></script>
+</body>
+</html>
